@@ -1,4 +1,4 @@
-// Definisanje `angularjsKurs` modula
+// Definisanje `angularjsKurs` modula https://api.myjson.com/bins/y0p5s
 var angularjsKurs = angular.module('angularjsKurs', []);
 
 // Definisanje `AngularJSKursController` kontrolera u `angularjsKurs` modulu
