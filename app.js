@@ -21,22 +21,3 @@ angularjsKurs.controller(
     ];
   }
 );
-angularjsKurs.controller(
-  'AngularJSKursControllerEDIT',
-  function AngularJSKursController($scope) {
-    $scope.phones1 = [
-      {
-        name: 'Nexus S EDIT',
-        snippet: 'Fast just got faster with Nexus S.'
-      },
-      {
-        name: 'Motorola XOOM™ with Wi-Fi EDIT',
-        snippet: 'The Next, Next Generation tablet.'
-      },
-      {
-        name: 'MOTOROLA XOOM™ EDIT',
-        snippet: 'The Next, Next Generation tablet.'
-      }
-    ];
-  }
-);
