@@ -4,29 +4,49 @@
     <meta charset="utf-8" />
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
     <div ng-controller="AngularJSKursController">
-        <ul>
-          <li ng-repeat="phone in phones">
-            <span>{{ phone.name }}</span>
-            <p>{{ phone.snippet }}</p>
-          </li>
-        </ul>
-        <p>Total number of phones: {{ phones.length }}</p>
-        <p>Hello, {{ name }}!</p>
+      <ul>
+        <li ng-repeat="phone in phones">
+          <span>{{ phone.name }}</span>
+          <p>{{phone.snippet}}</p>
+        </li>
+      </ul>
+      <p>Total number of phones: {{ phones.length }}</p>
+      <p>Hello, {{ name }}!</p>
     </div>
     <div ng-controller="AngularJSKursControllerNoviScope">
-        <ul>
-          <li ng-repeat="phone in phones">
-            <span>{{ phone.name }}</span>
-            <p>{{ phone.snippet }}</p>
-          </li>
-        </ul>
-        <p>Total number of phones: {{ phones.length }}</p>
-        <p>Hello, {{ name }}!</p>
+      <ul>
+        <li ng-repeat="phone in phonesNewScope">
+          <span>{{ phone.name }}</span>
+          <p>{{ phone.snippet }}</p>
+        </li>
+      </ul>
+      <p>Total number of phones: {{ phones.length }}</p>
+      <p>Hello, {{ name }}!</p>
+      <div class="box">
+        <p ng-click="count = count + 1">{{ count }}</p>
+        <p ng-click="increment();">{{ countFunc }}</p>
+        <p ng-click="decrement();">{{ countFunc }}</p>
+      </div>
+      <div class="box" ng-repeat="c in cat">
+          <img ng-src="{{c.img}}" alt="Cat image">
+          <span ng-bind="c.name"></span>
+      </div>
+      <input type="text" ng-value="input">
+      <input type="text" ng-model="input">
+      <p>{{input}}</p>
+      <form action="">
+        <input type="text" ng-model="firstName">
+        <input type="text" ng-model="lastName">
+        <input type="number" ng-model="age">
+        <input type="email" ng-model="email">
+        <a ng-click="submit();">submit</a>
+      </form>
     </div>
   </body>
 </html>

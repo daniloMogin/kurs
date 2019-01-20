@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    text-align: center;
+    margin: 0 5px 
+}
+.box > p {
+    background-color: aquamarine;
+    flex-grow: 1;
+    height: 33px;
+    margin-right: 5px;
+    width: 33px;
+}
