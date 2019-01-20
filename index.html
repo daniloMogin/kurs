@@ -7,31 +7,26 @@
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-controller="AngularJSKursController">
-    <ul>
-      <li ng-repeat="phone in phones">
-        <span>{{ phone.name }}</span>
-        <p>{{ phone.snippet }}</p>
-      </li>
-    </ul>
-    <p>Total number of phones: {{ phones.length }}</p>
-    <p>Hello, {{ name }}!</p>
-    <table>
-      <tr>
-        <th>Row number</th>
-      </tr>
-      <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
-        <td>{{ i }}</td>
-      </tr>
-    </table>
-
-    <table>
-      <tr>
-        <th>Row number</th>
-      </tr>
-      <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
-        <td>{{ i + 1 }}</td>
-      </tr>
-    </table>
+  <body>
+    <div ng-controller="AngularJSKursController">
+        <ul>
+          <li ng-repeat="phone in phones">
+            <span>{{ phone.name }}</span>
+            <p>{{ phone.snippet }}</p>
+          </li>
+        </ul>
+        <p>Total number of phones: {{ phones.length }}</p>
+        <p>Hello, {{ name }}!</p>
+    </div>
+    <div ng-controller="AngularJSKursControllerNoviScope">
+        <ul>
+          <li ng-repeat="phone in phones">
+            <span>{{ phone.name }}</span>
+            <p>{{ phone.snippet }}</p>
+          </li>
+        </ul>
+        <p>Total number of phones: {{ phones.length }}</p>
+        <p>Hello, {{ name }}!</p>
+    </div>
   </body>
 </html>

@@ -22,3 +22,23 @@ angularjsKurs.controller(
     $scope.name = 'world';
   }
 );
+angularjsKurs.controller(
+  'AngularJSKursControllerNoviScope',
+  function AngularJSKursController($scope) {
+    $scope.phonesNewScope = [
+      {
+        name: 'Nexus S DOIT',
+        snippet: 'Fast just got faster with Nexus S.'
+      },
+      {
+        name: 'Motorola XOOM™ with Wi-Fi DOIT',
+        snippet: 'The Next, Next Generation tablet.'
+      },
+      {
+        name: 'MOTOROLA XOOM™ DOIT',
+        snippet: 'The Next, Next Generation tablet.'
+      }
+    ];
+    $scope.name = 'DOIT';
+  }
+);
