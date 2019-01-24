@@ -83,4 +83,28 @@ index.html
       console.log(obj);
       
     }
+
+================================
+
+        <p>Hello, {{ name }}!</p>
+        <div class="box">
+            <p ng-click="count = count + 1">{{ count }}</p>
+            <p ng-click="increment();">{{ countFunc }}</p>
+            <p ng-click="decrement();">{{ countFunc }}</p>
+        </div>
+        <div class="box" ng-repeat="c in cat">
+            <img ng-src="{{c.img}}" alt="Cat image">
+            <span ng-bind="c.name"></span>
+        </div>
+        <input type="text" ng-value="input">
+        <input type="text" ng-model="input">
+        <p>{{input}}</p>
+        <form action="">
+            <input type="text" ng-model="firstName">
+            <input type="text" ng-model="lastName">
+            <input type="number" ng-model="age">
+            <input type="email" ng-model="email">
+            <a ng-click="submit();">submit</a>
+        </form>
+==============================================
 ========================== 3 ===============================
