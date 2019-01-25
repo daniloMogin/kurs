@@ -1,8 +1,8 @@
 angular
     .module('angularjsKurs')
     .component('helloWorld', {
-        template: 'Hello, {{$ctrl.user}}!',
-        controller: function HelloWorldController() {
-            this.user = 'world';
+        template: 'Hello, {{user}}!',
+        controller: function HelloWorldController($scope) {
+            $scope.user = 'world';
         }
 });

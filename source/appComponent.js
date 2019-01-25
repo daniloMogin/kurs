@@ -1,7 +1,7 @@
 angular.module('angularjsKurs').component('convertCtrl', {
     templateUrl: 'convertComp.html',
-    controller: function ConvertCtrlController() {
-        this.phones = [
+    controller: function ConvertCtrlController($scope) {
+        $scope.phones = [
             {
                 name: 'Nexus S',
                 snippet: 'Fast just got faster with Nexus S.'
@@ -15,24 +15,24 @@ angular.module('angularjsKurs').component('convertCtrl', {
                 snippet: 'The Next, Next Generation tablet.'
             }
         ];
-        this.name = 'world';
-        this.count = 10;
+        $scope.name = 'world';
+        $scope.count = 10;
 
-        this.increment = () => {
-            this.count++;
+        $scope.increment = () => {
+            $scope.count++;
         }
 
-        this.firstName = 'Pera';
-        this.lastName = 'Peric';
-        this.age = 20;
-        this.email = 'pera.peric@email.com';
+        $scope.firstName = 'Pera';
+        $scope.lastName = 'Peric';
+        $scope.age = 20;
+        $scope.email = 'pera.peric@email.com';
 
-        this.submit = () => {
+        $scope.submit = () => {
             const userObj = {
-                name: this.firstName,
-                lastName: this.lastName,
-                age: this.age,
-                email: this.email
+                name: $scope.firstName,
+                lastName: $scope.lastName,
+                age: $scope.age,
+                email: $scope.email
             }
 
             console.log(`userObj`);
