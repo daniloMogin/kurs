@@ -5,4 +5,4 @@ angular
         controller: function HelloWorldController($scope) {
             $scope.user = 'world';
         }
-});
+    });
