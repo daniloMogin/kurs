@@ -5,16 +5,28 @@ angular.module('angularjsKurs')
             $scope.customFilter = 'angularjsKurs';
             $scope.phones = [
                 {
-                    name: 'Nexus S',
-                    snippet: 'Fast just got faster with Nexus S.'
+                    "naziv": "Slika 1",
+                    "slika": "https://via.placeholder.com/150/0000FF/808080?text=smartschool.rs"
                 },
                 {
-                    name: 'Motorola XOOM™ with Wi-Fi',
-                    snippet: 'The Next, Next Generation tablet.'
+                    "naziv": "Slika 2",
+                    "slika": "https://via.placeholder.com/150/FF0000/FFFFFF?text=smartschool.rs"
                 },
                 {
-                    name: 'MOTOROLA XOOM™',
-                    snippet: 'The Next, Next Generation tablet.'
+                    "naziv": "Slika 3",
+                    "slika": "https://via.placeholder.com/150/FFFF00/000000?text=smartschool.rs"
+                },
+                {
+                    "naziv": "Slika 4",
+                    "slika": "https://via.placeholder.com/150/000000/FFFFFF?text=smartschool.rs"
+                },
+                {
+                    "naziv": "Slika 6",
+                    "slika": "https://via.placeholder.com/150/0000FF/808080?text=smartschool.rs"
+                },
+                {
+                    "naziv": "Slika 5",
+                    "slika": "https://via.placeholder.com/150/FFFF00/000000?text=smartschool.rs"
                 }
             ];
         }

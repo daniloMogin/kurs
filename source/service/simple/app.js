@@ -12,7 +12,7 @@ angular.module('angularJSKurs', [])
                 console.log(message);
             };
 
-            $scope.getJson = $http.get('https://api.myjson.com/bins/y0p5s').then(function (response) {
+            $scope.getJson = $http.get('https://api.myjson.com/bins/12qiaa').then(function (response) {
                 $scope.phonesJson = response.data;
                 console.log(`response`);
                 console.log(response);

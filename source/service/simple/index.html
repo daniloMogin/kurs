@@ -16,9 +16,10 @@
         {{message}} <br>
         $location servis: {{myUrl}} <br>
         <ul>
-            <li ng-repeat="p in phonesJson.phones">
-                <span>{{ p.name }}</span>
-                <p>{{ p.snippet }}</p>
+            <li ng-repeat="p in phonesJson.galerija">
+                <span>{{ p.naziv }}</span>
+                <p>{{ p.slika }}</p>
+                <img ng-src="{{p.slika}}" alt="">
             </li>
         </ul>
     </div>
