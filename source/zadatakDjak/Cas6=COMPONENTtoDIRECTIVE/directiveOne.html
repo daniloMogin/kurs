@@ -1,0 +1,16 @@
+<div ng-controller="directiveOneController">
+<div id="first">
+    <p>First Name: <span>{{firstName}}</span></p>
+    <p>Last Name: <span>{{lastName}}</span></p>
+    <p>Birth Place: <span>{{birthPlace}}</span></p>
+</div>
+<div id="second" ng-repeat="dog in galery">
+    <img ng-src="{{dog.image}}" alt="Slika iz galerije">
+    <p>Name of the dog from the picture above: <span>{{dog.name}}</span></p>
+</div>
+<div id="fourth">
+    First Number: <input type="number" ng-model="a">
+    Second Number: <input type="number" ng-model="b">
+    <a ng-click="add(a, b)">Add</a>
+</div>
+</div>

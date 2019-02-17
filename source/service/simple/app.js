@@ -13,19 +13,9 @@ angular.module('angularJSKurs', [])
             };
 
             $scope.getJson = $http.get('https://api.myjson.com/bins/y0p5s').then(function (response) {
-                $scope.myWelcome = response.data;
+                $scope.phonesJson = response.data;
                 console.log(`response`);
                 console.log(response);
-                
+
             });
         })
-    .directive('kursDir', function () {
-        return {
-            restrict: 'E',
-            transclude: true,
-            scope: {
-                'send': '&onSend'
-            },
-            templateUrl: 'template.html'
-        };
-    })

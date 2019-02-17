@@ -14,6 +14,8 @@ angular.module('angularJSKurs', [])
                 };
 
                 this.addPane = function (pane) {
+                    console.log(`PARENT`);
+                    
                     if (panes.length === 0) {
                         $scope.select(pane);
                     }

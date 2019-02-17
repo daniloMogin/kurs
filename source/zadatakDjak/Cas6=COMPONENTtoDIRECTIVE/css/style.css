@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*#first {
+    display: block;
+    margin-bottom: 1%;
+}*/
+
+#first span, #second span {
+    color: #f00;
+}
+
+#second {
+    display: inline-block;
+    margin: 1%;
+    line-height: 1%;
+}
+
+#second img {
+    width: 380px;
+    height: auto;
+}
+
+#third {
+    margin-top: 20px;
+}
+
+#third a, #fourth a {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0;
+    text-shadow: 1px 1px 1px #f00;
+}

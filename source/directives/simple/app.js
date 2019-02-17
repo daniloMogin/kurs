@@ -8,14 +8,8 @@ angular.module('angularJSKurs', [])
         })
     .directive('kursDir', function () {
         return {
-            restrict: 'AEMC',
+            restrict: 'AECM',
             replace: true,
-            template: `
-                <div>
-                    Name: {{korisnik.name}}
-                    <br>
-                    Address: {{korisnik.address}}
-                </div>
-            `
+            templateUrl: 'template.html'
         };
     })

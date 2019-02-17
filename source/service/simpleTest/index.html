@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>angularJSKurs</title>
+    <title>Document</title>
     <script src="./../../lib/angular/angular.js"></script>
     <script src="./app.js"></script>
+    <script src="./calc.js"></script>
 </head>
 
 <body>
-    <div ng-controller="DirectiveController">
-        <h1>Direktive</h1>
-        {{message}} <br>
-        {{myUrl}}
-        <kurs-dir on-send="send(message)">
-            Koristim funkciju iz kontrolera, {{contro}}!
-        </kurs-dir>
+    <div ng-controller="CustomCtrl">
+        <input type="number" ng-model="broj">
+        <a ng-click="add()">Add</a>
+        <span>{{rezultat}}</span>
     </div>
 </body>
 

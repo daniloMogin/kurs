@@ -11,13 +11,10 @@
 </head>
 
 <body>
-    <div ng-controller="DirectiveController">
-        <h1>Direktive</h1>
-        {{message}} <br>
-        {{myUrl}}
-        <kurs-dir on-send="send(message)">
-            Koristim funkciju iz kontrolera, {{contro}}!
-        </kurs-dir>
+    <div ng-controller="DiffInitController">
+        <p><b>Message From Service: </b>{{serviceMsg}}</p>
+        <p><b>Message From Factory: </b>{{factoryMsg}}</p>
+        <p><b>Message From Provider:</b>{{providerMsg}}</p>
     </div>
 </body>
 
